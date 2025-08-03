@@ -26,3 +26,24 @@ Install dependencies using:
 
 ```bash
 pip install pandas numpy scikit-learn tensorflow
+
+## Input Data
+
+The script expects a CSV file named `network_data.csv` placed in the project directory.
+
+Columns automatically dropped if present:  
+- Label  
+- Attempted Category  
+- Timestamp  
+
+The dataset should contain mostly numeric columns after cleanup.  
+Rows with missing values are automatically removed.
+
+---
+
+## How to Run
+
+Run the script using:
+
+```bash
+python network_anomaly_finder.py
